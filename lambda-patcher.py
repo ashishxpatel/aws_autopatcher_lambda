@@ -4,7 +4,7 @@
 import time
 import json
 import boto3
-import requests
+from botocore.vendored import requests
 
 # Place your incoming Slack webhook here
 
