@@ -61,7 +61,7 @@ def patch_server(instanceid):
     slack_message += "\n"+str(server_output['StandardOutputContent'])
     return slack_message
 
-def lambda_handler():
+def lambda_handler(event, context):
     for servers in servers_to_patch:
         send_message(patch_server(servers))
         
