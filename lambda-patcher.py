@@ -64,3 +64,5 @@ def patch_server(instanceid):
 def lambda_handler():
     for servers in servers_to_patch:
         send_message(patch_server(servers))
+        
+
